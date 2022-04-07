@@ -16,7 +16,7 @@ int McdExtendido(int a, int b, int *x, int *y)
     int x1, y1; 
     int mcd = McdExtendido(b%a, a, &x1, &y1);
  
-    // Actualizar x e y usando los resultados de recursivo
+    // Actualizar x e y usando los resultados recursivos
     *x = y1 - (b/a) * x1;
     *y = x1;
     return mcd;
